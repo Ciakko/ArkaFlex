@@ -1,0 +1,96 @@
+@use "_variables";
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+body {
+	margin:0;
+	background-color: #fff;
+}
+
+#wrapper{
+	position: absolute;
+	width:100%;
+	height:100%;
+	padding: 0 2.5%;
+}
+
+#container {
+    position: relative; 
+	float:left;
+	width:90%; 
+	height:90%;
+	border:1px solid #000;
+	overflow:hidden;
+}
+
+#score-box{
+	position:relative;
+	float: left;
+	width: 10%;
+	text-align: center;
+}
+.total{
+	width:100%
+	span {
+		width:100%;
+		font-weight: bold;
+	}
+}
+.blocks-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.block {
+   border-width:  1px solid #000 
+   box-shadow: inset -2px -1px 6px variables.$color_dark, 2px 2px 4px variables.$color_dark;
+}
+
+.racket{
+    position:absolute;
+	bottom:10px;
+	background-color: variables.$color_grey;
+	background: radial-gradient( rgb(167, 167, 167) 8%, rgb(66, 64, 64) 85%);
+	width:10%;
+	z-index:100;
+    border-radius: 10px;
+}
+
+.ball {
+	position:absolute;
+	background-color: variables.$color_grey;
+	background: radial-gradient(circle, rgba(235,235,235,1) 2%, rgba(170,170,170,1) 65%);
+	border-radius:100%;
+	z-index:100;
+	box-shadow: 2px 2px 8px -4px variables.$color_dark;
+}
+
+.box-container {
+	width:100%;
+	height:100%;
+	display: flex;
+	align-items: center;
+    justify-content: center;
+
+}
+
+.box {
+	width: 80%;
+	text-align: center;
+	border: 1px solid #cacaca
+}
+
+.pill {
+	position: absolute;
+	border: 1px solid #000000;
+	border-radius: 20px;
+	min-height: 12px;
+	box-shadow: inset -2px -1px 6px variables.$color_dark;
+}

@@ -1,0 +1,24 @@
+$color_blue: rgb(82, 42, 194);
+$color_green: rgb(42, 194, 65);
+$color_red: rgb(214, 43, 27);
+$color_yellow: rgb(210, 244, 19);
+$color_white: rgb(255,255,255);
+$color_purple: rgb(135, 6, 100);
+$color_grey: rgb(157, 167, 176);
+$color_dark: rgb(52, 49, 49);
+$color_black: rgb(0, 0, 0);
+
+$colors: (
+    "blue": $color_blue,
+    "green": $color_green,
+    "red": $color_red,
+    "yellow": $color_yellow,
+    "white": $color_white,
+    "purple": $color_purple,
+    "grey" : $color_grey,
+    "dark" : $color_dark,
+    "black" : $color_black,
+);
+
+
+

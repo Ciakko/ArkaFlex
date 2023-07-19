@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div id="wrapper">
+        <div id="container">
+            <div class="blocks-container"></div>
+            <div class="box-container">
+                <div class="box info-box"></div>
+            </div>
+        </div>
+        <div id="score-box">
+            <div class="total">
+                <h3>Score</h3>
+                <span id="score">0</span>
+				
+				<h3>Balls left</h3>
+				<span id="balls"></span>
+            </div>
+			<div class="total">
+				<h3>Pills</h3>
+				
+				<div style="position:relative; float:left; width:100%">
+					<div class="pill bg-blue" style="position:relative; float:left; width:40px; height:13px; margin:5px"></div> - Encrease the racket width
+				</div>
+				<div style="position:relative; float:left; width:100%">
+					<div class="pill bg-red" style="position:relative; float:left; width:40px; height:13px; margin:5px"></div> - Reduce the racket width
+				</div>
+				<div style="position:relative; float:left; width:100%">
+					<div class="pill bg-black" style="position:relative; float:left; width:40px; height:13px; margin:5px"></div> - Encrease the ball velocity
+				</div>
+				<div style="position:relative; float:left; width:100%">
+					<div class="pill bg-purple" style="position:relative; float:left; width:40px; height:13px; margin:5px"></div> - Decrease the ball velocity
+				</div>
+				
+			</div>
+        </div>
+
+    </div>
+    
+   
+    <script src="js/game.js"></script>
+    <script>let newGame = new game();</script>
+</body>
+</html>
