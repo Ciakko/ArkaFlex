@@ -165,7 +165,7 @@ class game {
                 }
               
                 if(this.gameOn == false){
-                    this.balls[0].style.left = pos + (racketWidth / 2) + "px";
+                    this.balls[0].style.left = pos + (racketWidth / 2) - (this.balls[0].offsetWidth/2) + "px";
                 }
             }
         })
